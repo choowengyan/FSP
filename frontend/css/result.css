@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+body {
+  background-image: url("../assets/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
+.navbar {
+  color: rgb(77, 0, 0);
+  padding: 30px 50px 50px;
+  margin-left: 7%;
+}
+
+.navbar-brand {
+  font-family: monospace;
+  font-size: 35px;
+  letter-spacing: 15px;
+  color: rgb(77, 0, 0);
+}
+
+.navbar-nav {
+  margin-left: 50%;
+}
+
+.navbar-nav>li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.row {
+  border: 1px solid black;
+}
+
+.row:hover {
+  background-color: #d9d9d9;
+}
+
+.lecture {
+  font-size: 12pt;
+  margin-bottom: 4px;
+}
+
+.cell {
+  display: inline-block;
+  font-family: sans-serif;
+}
+
+footer {
+  text-align: center;
+  font-size: 18px;
+  font-family: monospace;
+  color: black;
+  padding: 14px;
+}

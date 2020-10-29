@@ -1,0 +1,48 @@
+@charset "utf-8";
+header.head {
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #393f4d;
+    background-image: url("../assets/background3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+header.head .head-subheading {
+    font-size: 2.25rem;
+    font-style: italic;
+    line-height: 2.25rem;
+    margin-bottom: 4rem;
+    padding-top: 8.5rem;
+}
+
+header.head .head-heading {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 5rem;
+    margin-bottom: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #00303F;
+    border: 0 none;
+    padding: 0.375rem 0.75rem;
+    line-height: 2;
+}
+
+.btn:hover {
+    color: #00303F;
+    background: #e5e4ea;
+    border: 1px;
+    border-color: black;
+    text-decoration: none;
+}

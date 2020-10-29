@@ -1,0 +1,203 @@
+POST http://localhost:3000/basic/insert HTTP/1.1
+Content-Type: application/json
+
+{
+	"data": [
+        {
+			"semesterId": 2020100001,
+			"lectureId": 1110000001,
+			"facultyId": 4110000001,
+			"dayOfWeek": 1,
+			"startTime": "08:30",
+			"endTime": "10:30"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000002,
+			"facultyId": 4110000001,
+			"dayOfWeek": 1,
+			"startTime": "08:30",
+			"endTime": "10:30"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000003,
+			"facultyId": 4110000001,
+			"dayOfWeek": 2,
+			"startTime": "08:00",
+			"endTime": "09:00"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000004,
+			"facultyId": 4110000001,
+			"dayOfWeek": 4,
+			"startTime": "14:00",
+			"endTime": "16:00"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000005,
+			"facultyId": 4110000001,
+			"dayOfWeek": 5,
+			"startTime": "10:00",
+			"endTime": "12:00"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000006,
+			"facultyId": 4110000001,
+			"dayOfWeek": 1,
+			"startTime": "09:00",
+			"endTime": "11:00"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000007,
+			"facultyId": 4110000001,
+			"dayOfWeek": 2,
+			"startTime": "08:30",
+			"endTime": "11:00"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000008,
+			"facultyId": 4110000001,
+			"dayOfWeek": 2,
+			"startTime": "09:00",
+			"endTime": "12:00"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000009,
+			"facultyId": 4110000001,
+			"dayOfWeek": 3,
+			"startTime": "10:00",
+			"endTime": "12:30"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000010,
+			"facultyId": 4110000001,
+			"dayOfWeek": 4,
+			"startTime": "15:00",
+			"endTime": "17:00"
+		},
+		{
+			"semesterId": 2020100001,
+			"lectureId": 1110000011,
+			"facultyId": 4110000001,
+			"dayOfWeek": 5,
+			"startTime": "14:00",
+			"endTime": "16:00"
+		}
+	]
+}
+
+###
+POST http://localhost:3000/advance/insert HTTP/1.1
+Content-Type: application/json
+
+{
+	"data": [
+        {
+			"technicianId": 1230000001,
+			"semesterId": 2020100001,
+			"facultyId": 4110000001,
+			"dayOfWeek": 1,
+			"startTime": "08:00",
+			"endTime": "13:00"
+		},
+		{
+			"technicianId": 1230000002,
+			"semesterId": 2020100001,
+			"facultyId": 4110000001,
+			"dayOfWeek": 1,
+			"startTime": "08:00",
+			"endTime": "13:00"
+		},
+		{
+			"technicianId": 1230000003,
+			"semesterId": 2020100001,
+			"facultyId": 4110000001,
+			"dayOfWeek": 1,
+			"startTime": "08:30",
+			"endTime": "14:00"
+		},
+		{
+			"technicianId": 1230000004,
+			"semesterId": 2020100001,
+			"facultyId": 4110000001,
+			"dayOfWeek": 3,
+			"startTime": "10:00",
+			"endTime": "15:00"
+		},
+		{
+			"technicianId": 1230000005,
+			"semesterId": 2020100001,
+			"facultyId": 4110000001,
+			"dayOfWeek": 4,
+			"startTime": "09:30",
+			"endTime": "14:30"
+		},
+		{
+			"technicianId": 1230000006,
+			"semesterId": 2020100001,
+			"facultyId": 4110000001,
+			"dayOfWeek": 5,
+			"startTime": "10:00",
+			"endTime": "17:30"
+		},
+		{
+			"technicianId": 1230000007,
+			"semesterId": 2020100001,
+			"facultyId": 4110000002,
+			"dayOfWeek": 1,
+			"startTime": "09:00",
+			"endTime": "14:00"
+		}
+	]
+}
+
+### 
+GET http://localhost:3000/basic/data HTTP/1.1
+Content-Type: application/json
+
+### 
+GET http://localhost:3000/advance/data HTTP/1.1
+Content-Type: application/json
+
+### 
+GET http://localhost:3000/basic/result HTTP/1.1
+Content-Type: application/json
+
+### 
+GET http://localhost:3000/advance/result HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/basic/data?semesterId=2020100001&facultyId=4110000002 HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/basic/data?facultyId=4110000001&semesterId=2020100001&page=0&pageSize=20 HTTP/1.1
+Content-Type: application/json
+
+###
+GET http://localhost:3000/advance/data?semesterId=1110000000&facultyId=1100000000 HTTP/1.1
+Content-Type: application/json
+
+###
+GET  http://localhost:3000/advance/result?facultyId=9999999999&semesterId=9999999999&dayOfWeek=2 HTTP/1.1
+Content-Type: application/json
+
+
+###
+GET http://localhost:3000/basic/result?facultyId=4110000001&semesterId=2020100001&dayOfWeek=1 HTTP/1.1
+Content-Type: application/json
+
+
+###
+GET http://localhost:3000/advance/result?semesterId=2020100001&facultyId=4110000001&dayOfWeek=1 HTTP/1.1
+Content-Type: application/json
+
